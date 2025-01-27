@@ -1,3 +1,4 @@
+import HEAD
 import pygame
 
 from constants import *
@@ -11,9 +12,20 @@ class Post:
     """
     A class used to represent post on Nitzagram
     """
+
     def __init__(self): #TODO: add parameters
         #TODO: write me!
         self.comments_display_index = None
+    def __init__(self, username , location , description , counter_likes , comments): #TODO: add parameters
+        self.username = username
+        self.location = location
+        self.description = description
+        self.counter_likes = counter_likes
+        self.comments = comments
+         #TODO: write me!
+        pass
+    def add_like(self):
+        self.counter_likes += 1
 
     def display(self):
         """
