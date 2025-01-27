@@ -3,6 +3,9 @@ import pygame
 from constants import *
 from helpers import screen
 
+from Nitzagram2025.constants import NUM_OF_COMMENTS_TO_DISPLAY, COMMENT_TEXT_SIZE, LIGHT_GRAY, VIEW_MORE_COMMENTS_X_POS, \
+    VIEW_MORE_COMMENTS_Y_POS
+
 
 class Post:
     """
@@ -10,7 +13,7 @@ class Post:
     """
     def __init__(self): #TODO: add parameters
         #TODO: write me!
-        pass
+        self.comments_display_index = None
 
     def display(self):
         """
