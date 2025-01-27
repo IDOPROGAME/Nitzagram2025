@@ -8,8 +8,13 @@ class Post:
     """
     A class used to represent post on Nitzagram
     """
-    def __init__(self): #TODO: add parameters
-        #TODO: write me!
+    def __init__(self, username , location , description , counter_likes , comments): #TODO: add parameters
+        self.username = username
+        self.location = location
+        self.description = description
+        self.counter_likes = counter_likes
+        self.comments = comments
+         #TODO: write me!
         pass
 
     def display(self):
